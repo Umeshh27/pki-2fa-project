@@ -9,7 +9,7 @@ from app.totp_utils import generate_totp_code, verify_totp_code, seconds_remaini
 app = FastAPI()
 
 # Local storage (Docker will remap to /data)
-SEED_PATH = Path("data/seed.txt")
+SEED_PATH = Path("/data/seed.txt")
 
 
 # ------------ Request models ------------
